@@ -8,34 +8,38 @@ package question1;
  */
 public class FahrenheitCelsius {
 
-	/**
-	 * le point d'entrée de cette application, dont le commentaire est à
-	 * compléter
-	 * 
-	 * @param args
-	 *            ...
-	 */
-	public static void main(String[] args) {
-		// pour tous les paramètres de la ligne de commande
-		int fahrenheit = 0;
-		float celsius = 0;
-		System.out.println(fahrenheit + "\u00B0F -> " + celsius + "\u00B0C"); // ligne,
-																				// format
-																				// imposés
-																				
-	}
+    /**
+     * le point d'entrée de cette application, dont le commentaire est à
+     * compléter
+     * 
+     * @param args
+     *            ...
+     */
+    public static void main(String[] args) {
+        // pour tous les paramètres de la ligne de commande
+        int Fahrenheit = 0;
+        float Celsius = 0;
+        for (int i=0; i<args.length;i++){
+            Fahrenheit =Integer.parseInt(args[i]);;
+            Celsius = fahrenheitEnCelsius(Fahrenheit);
+        
+            System.out.println(Fahrenheit + "\u00B0F -> " + Celsius + "\u00B0C"); 
+        }                                                                    
+    }
 
-	/**
-	 * la méthode à compléter.
-	 * 
-	 * @param f
-	 *            la valeur en degré Fahrenheit
-	 * @return la conversion en degré Celsius
-	 */
-	public static float fahrenheitEnCelsius(int f) {
-
-		return 0.F; // à compléter en remplaçant ce return 0.F par la fonction
-					// de conversion
-	}
+    /**
+     * la méthode à compléter.
+     * 
+     * @param f
+     *            la valeur en degré Fahrenheit
+     * @return la conversion en degré Celsius
+     */
+    public static float fahrenheitEnCelsius(int f) {
+        float c,s;
+        c= ((f-32)*5.0f)/9.0f;
+        s=(c*10);
+        s=(int)s/10.0f;
+        return s; 
+    }
 
 }

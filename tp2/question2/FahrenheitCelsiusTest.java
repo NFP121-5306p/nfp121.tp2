@@ -48,7 +48,7 @@ public class FahrenheitCelsiusTest extends junit.framework.TestCase
     protected void setUp() // throws java.lang.Exception
     {
         // Initialisez ici vos engagements
-
+        
     }
 
     /**
@@ -68,5 +68,4 @@ public class FahrenheitCelsiusTest extends junit.framework.TestCase
      * Par convention, leurs noms devraient débuter par "test".
      * Vous pouvez ébaucher le corps grâce au menu contextuel "Enregistrer une méthode de test".
      */
-
 }
